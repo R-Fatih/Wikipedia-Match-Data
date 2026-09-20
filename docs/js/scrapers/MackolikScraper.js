@@ -40,7 +40,7 @@ class MackolikScraper {
             return { homeGoals: '', awayGoals: '' };
         }
 
-        const mackolikUrl = `https://arsiv.mackolik.com/Match/MatchData.aspx?t=dtl&id=${matchId}&s=0&_t=${Date.now()}`;
+        const mackolikUrl = `https://arsiv.mackolik.com/Match/MatchData.aspx?t=dtl&id=${matchId}&s=0`;
 
         // 1. Try custom Cloudflare Worker proxy first
         if (this.customProxyUrl) {
